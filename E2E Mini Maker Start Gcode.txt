@@ -1,6 +1,6 @@
 ;E2E Mini Maker Start G-Code Cura 4.5 | UBL Enabled | April 9, 2020
-M300 S440 P1000 ;Beep
-G28; Home
+M300 S440 P1000; Beep
+G28; Home all axis
 M220 S100; Reset Print Feed Rate to 100% 
 M420 S1; Enable UBL
 M420 L1; Load Mesh 1
