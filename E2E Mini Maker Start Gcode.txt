@@ -1,0 +1,18 @@
+;E2E Mini Maker Start G-Code Cura 4.5 | UBL Enabled | April 9, 2020
+M300 S440 P1000 ;Beep
+G28; Home
+M220 S100; Reset Print Feed Rate to 100% 
+M420 S1; Enable UBL
+M420 L1; Load Mesh 1
+M117 Bed Tilt Calibration; LCD Message
+G29 J; Tilt Calibration
+M117 Nozzle Wipe; LCD Message
+G90; Absolute positioning
+G92 E0; Zero the extruded length
+G1 X0.0 Y50.0 Z10.0 F3600; Go to X0 Y50 / Stat prime position
+G1 Z0.0 F1000; Touch Bed
+G1 Z0.2 Y70.0 E9.0 F1000.0; Lift/Prime
+G1 Y100.0 E12.5 F1000.0; Prime
+G92 E0; Zero extruder again
+M400; Wait for all moves in planner to complete
+M117 Printing... ; LCD Message

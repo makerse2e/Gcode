@@ -1,0 +1,10 @@
+;E2E Mini Maker End G-Code Cura 4.5 | April 9, 2020
+M104 S0; Hotend off
+M140 S0; Heated bed off
+G28 X; Home X
+G91; Relative positioning
+G1 E-600 F800; Retract
+G28 Z; Home Z
+G90; Absolute positioning
+M84; Steppers off
+M117 Done...; LCD Message
